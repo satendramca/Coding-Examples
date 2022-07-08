@@ -72,5 +72,17 @@ const j = 3;
 
 //  const b = 13;
 //  b = 14;
+//  Function in JavaScript 
+//   Q.1 What is Function Declaration ?
+// function square(num){
+//     return num*num;
+// }
 
+// Q.2 What is Function Expression?
+const square = function(num){
+    return num*num;
+}; 
+console.log(square(5));
+
+// Q.3 What is the First Class functions ?
 
