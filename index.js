@@ -79,10 +79,17 @@ const j = 3;
 // }
 
 // Q.2 What is Function Expression?
-const square = function(num){
-    return num*num;
-}; 
+// const square = function(num){
+//     return num*num;
+// }; 
 // console.log(square(5));
 
 // Q.3 What is the First Class functions ?
 
+function square(num){
+    return num*num;
+}
+function displaySquare(fn){
+    console.log("square is " + fn(5));
+}
+displaySquare(square);
