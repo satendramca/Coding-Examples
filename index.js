@@ -90,6 +90,20 @@ function square(num){
     return num*num;
 }
 function displaySquare(fn){
-    console.log("square is " + fn(5));
+    // console.log("square is " + fn(5));
 }
 displaySquare(square);
+
+// Q.4 What is IIFE(Immediately invoke function expresion) ?
+
+// (function square(num){
+//     console.log( num*num);
+// })(5)
+
+// IIFE O/P based Q?
+(function (x) {
+    return (function  (y) {
+        console.log(x);
+    })(2);
+})(1);
+
