@@ -101,9 +101,9 @@ displaySquare(square);
 // })(5)
 
 // IIFE O/P based Q?
-(function (x) {
-    return (function  (y) {
-        console.log(x);
-    })(2);
-})(1);
+// (function (x) {
+//     return (function  (y) {
+//         console.log(x);
+//     })(2);
+// })(1);
 
