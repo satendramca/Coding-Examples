@@ -137,7 +137,14 @@ const squareArr = (num) => num * num;
 function fn(){
     console.log(arguments)
 }
-fn(1,2,3);
+// fn(1,2,3);
+// arguments in arrow function
+const fnArr = () =>{
+    console.log(arguments);
+};
+// fnArr(1,2,3);
+
+// 4. 'this' keyword
 
 
 
