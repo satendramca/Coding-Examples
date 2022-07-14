@@ -107,3 +107,14 @@ displaySquare(square);
 //     })(2);
 // })(1);
 
+// Q.5 Arrow function
+// this is normal function 
+const addx = function (firstNum, secondNum) {
+    return firstNum + secondNum;
+}
+
+// this is arrow function
+const add = (firstNum, secondNum) => {
+    return firstNum + secondNum;
+}
+
