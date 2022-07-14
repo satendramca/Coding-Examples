@@ -155,7 +155,13 @@ const user = {
 
 user.name = "sanjay" // modify this name in object
 delete user.age; // delete property
-console.log(user);
-console.log(user.name);
+// console.log(user);
+// console.log(user.name);
+
+
+// hoisting
+var x; // Declare the variable
+a = 5; // assign the value 
+console.log(a);
 
 
