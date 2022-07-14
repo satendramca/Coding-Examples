@@ -147,4 +147,15 @@ const fnArr = () =>{
 // 4. 'this' keyword
 
 
+// Object in JavaScript
+const user = {
+    name: "satendra",
+    age:"27"
+}
+
+user.name = "sanjay" // modify this name in object
+delete user.age; // delete property
+console.log(user);
+console.log(user.name);
+
 
