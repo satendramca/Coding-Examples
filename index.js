@@ -118,3 +118,26 @@ const add = (firstNum, secondNum) => {
     return firstNum + secondNum;
 }
 
+// Differance b/n Arrow function vs Regular function ?
+
+// 1. syntax
+// Regular function syntax
+function square(num){
+    return num * num; //normal return keyword
+}
+// Arrow function syntax
+const squareArrow = (num)=>{
+    return num * num;
+}
+
+// 2. Implicit return keyword in arrow function
+const squareArr = (num) => num * num;
+
+// 3. Arguments
+function fn(){
+    console.log(arguments)
+}
+fn(1,2,3);
+
+
+
