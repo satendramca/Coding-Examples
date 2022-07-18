@@ -140,7 +140,7 @@ function fn(){
 // fn(1,2,3);
 // arguments in arrow function
 const fnArr = () =>{
-    console.log(arguments);
+    // console.log(arguments);
 };
 // fnArr(1,2,3);
 
