@@ -155,8 +155,8 @@ const user = {
 
 user.name = "sanjay" // modify this name in object
 delete user.age; // delete property
-console.log(user);
-console.log(user.name);
+// console.log(user);
+// console.log(user.name);
 
 
 // hoisting
