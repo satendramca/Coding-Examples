@@ -162,6 +162,6 @@ delete user.age; // delete property
 // hoisting
 var x; // Declare the variable
 a = 5; // assign the value 
-// console.log(a);
+console.log(a);
 
 
