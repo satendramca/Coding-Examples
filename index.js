@@ -208,10 +208,18 @@ function createdata(newdata){
            }, 2000)
        })
 }
+/*
 createdata({name:"Rana", profession: "Software engg"})
 .then(getDatas)
 .catch(err=>console.log(err))
+*/
 
 // Async and Await
+
+async function start(){
+   await createdata({name:"Rana", profession: "Software engg"})
+   getDatas();
+}
+start();
 
 
