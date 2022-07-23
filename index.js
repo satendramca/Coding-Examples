@@ -162,6 +162,38 @@ delete user.age; // delete property
 // hoisting
 var x; // Declare the variable
 a = 5; // assign the value 
-console.log(a);
+// console.log(a);
+
+// Async JS Programming
+// Callbacks, Promises, Async and Await
+
+const datas =[ 
+    {name: "Satendra", profession: "software engg"},
+    {name: "Sanjay", profession: "software engg"}
+];
+
+function getDatas(){
+
+    setTimeout(() => {
+        let output ="";
+     datas.forEach((data, index) => {
+         output+= `<li>${data.name}</li>`;
+        })
+        document.body.innerHTML=output
+    }, 1000);
+}
+
+// Using Callbacks function
+function createdata(newdata,Callbacks){
+    setTimeout(()=>{
+     datas.push(newdata);
+     Callbacks();
+    }, 2000)
+}
+createdata({name:"Rana", profession: "Software engg"}, getDatas)
+// getDatas();
+
+//Using Promies
+
 
 
