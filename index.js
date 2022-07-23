@@ -184,16 +184,34 @@ function getDatas(){
 }
 
 // Using Callbacks function
-function createdata(newdata,Callbacks){
-    setTimeout(()=>{
-     datas.push(newdata);
-     Callbacks();
-    }, 2000)
-}
-createdata({name:"Rana", profession: "Software engg"}, getDatas)
+// function createdata(newdata,Callbacks){
+//     setTimeout(()=>{
+//      datas.push(newdata);
+//      Callbacks();
+//     }, 2000)
+// }
+// createdata({name:"Rana", profession: "Software engg"}, getDatas)
 // getDatas();
 
 //Using Promies
 
+function createdata(newdata){
+    return new Promise((resolve, reject)=>{
+        setTimeout(()=>{
+            datas.push(newdata);
+            let error=false;
+            if(!error){
+                resolve();
+            }else{
+                reject("All not good")
+            }
+           }, 2000)
+       })
+}
+createdata({name:"Rana", profession: "Software engg"})
+.then(getDatas)
+.catch(err=>console.log(err))
+
+// Async and Await
 
 
