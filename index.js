@@ -216,10 +216,10 @@ createdata({name:"Rana", profession: "Software engg"})
 
 // Async and Await
 
-async function start(){
-   await createdata({name:"Rana", profession: "Software engg"})
-   getDatas();
-}
-start();
+// async function start(){
+//    await createdata({name:"Rana", profession: "Software engg"})
+//    getDatas();
+// }
+// start();
 
 
